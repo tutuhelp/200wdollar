@@ -37,6 +37,7 @@ $_['text_option']                    = 'Options';
 $_['text_order']                     = 'Orders';
 $_['text_order_status']              = 'Order Statuses';
 $_['text_product']                   = 'Products';
+$_['text_groupon']                   = 'Groupon';
 $_['text_reports']                   = 'Reports';
 $_['text_report_sale']               = 'Sales';
 $_['text_report_sale_order']         = 'Orders';
