@@ -59,6 +59,15 @@ class ControllerCommonColumnLeft extends Controller {
 				);
 			}
 			
+			//Seven Add Groupon
+			if ($this->user->hasPermission('access', 'catalog/groupon')) {
+				$catalog[] = array(
+					'name'	   => $this->language->get('text_groupon'),
+					'href'     => $this->url->link('catalog/groupon', 'token=' . $this->session->data['token'], true),
+					'children' => array()		
+				);
+			}
+			
 			if ($this->user->hasPermission('access', 'catalog/recurring')) {
 				$catalog[] = array(
 					'name'	   => $this->language->get('text_recurring'),

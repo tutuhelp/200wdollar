@@ -5,18 +5,21 @@ define('HTTP_SERVER', 'http://opencart.web/');
 // HTTPS
 define('HTTPS_SERVER', 'http://opencart.web/');
 
+
+$base_path = str_replace("\\","/",dirname(__FILE__));
+define('BASE_PATH', $base_path);
 // DIR
-define('DIR_APPLICATION', 'D:/www/opencart/catalog/');
-define('DIR_SYSTEM', 'D:/www/opencart/system/');
-define('DIR_IMAGE', 'D:/www/opencart/image/');
-define('DIR_LANGUAGE', 'D:/www/opencart/catalog/language/');
-define('DIR_TEMPLATE', 'D:/www/opencart/catalog/view/theme/');
-define('DIR_CONFIG', 'D:/www/opencart/system/config/');
-define('DIR_CACHE', 'D:/www/opencart/system/storage/cache/');
-define('DIR_DOWNLOAD', 'D:/www/opencart/system/storage/download/');
-define('DIR_LOGS', 'D:/www/opencart/system/storage/logs/');
-define('DIR_MODIFICATION', 'D:/www/opencart/system/storage/modification/');
-define('DIR_UPLOAD', 'D:/www/opencart/system/storage/upload/');
+define('DIR_APPLICATION', BASE_PATH.'/catalog/');
+define('DIR_SYSTEM', BASE_PATH.'/system/');
+define('DIR_IMAGE', BASE_PATH.'/image/');
+define('DIR_LANGUAGE', BASE_PATH.'/catalog/language/');
+define('DIR_TEMPLATE', BASE_PATH.'/catalog/view/theme/');
+define('DIR_CONFIG', BASE_PATH.'/system/config/');
+define('DIR_CACHE', BASE_PATH.'/system/storage/cache/');
+define('DIR_DOWNLOAD', BASE_PATH.'/system/storage/download/');
+define('DIR_LOGS', BASE_PATH.'/system/storage/logs/');
+define('DIR_MODIFICATION', BASE_PATH.'/system/storage/modification/');
+define('DIR_UPLOAD', BASE_PATH.'/system/storage/upload/');
 
 // DB
 define('DB_DRIVER', 'mysqli');

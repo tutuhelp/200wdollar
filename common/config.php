@@ -4,6 +4,17 @@ define('HTTP_DOMAIN', 'opencart.web');
 define('BASE_PATH', 'D:/www/200wdollar/');
 define('ADMIN_DIR', 'admin/');
 
+// DB
+define('DB_DRIVER', 'mysqli');
+define('DB_HOSTNAME', '127.0.0.1');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', 'admin');
+define('DB_DATABASE', 'opencart');
+define('DB_PORT', '3306');
+define('DB_PREFIX', 'oc_');
+
+
+
 // HTTP
 define('HTTP_SERVER', 'http://opencart.web/admin/');
 define('HTTP_CATALOG', 'http://opencart.web/');
@@ -26,11 +37,4 @@ define('DIR_MODIFICATION', BASE_PATH.'system/storage/modification/');
 define('DIR_UPLOAD', BASE_PATH.'system/storage/upload/');
 define('DIR_CATALOG', BASE_PATH.'catalog/');
 
-// DB
-define('DB_DRIVER', 'mysqli');
-define('DB_HOSTNAME', '127.0.0.1');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', 'admin');
-define('DB_DATABASE', 'opencart');
-define('DB_PORT', '3306');
-define('DB_PREFIX', 'oc_');
+
