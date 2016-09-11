@@ -619,6 +619,11 @@ class ControllerCatalogGroupon extends Controller {
 		$data['entry_reward'] = $this->language->get('entry_reward');
 		$data['entry_layout'] = $this->language->get('entry_layout');
 		$data['entry_recurring'] = $this->language->get('entry_recurring');
+		$data['entry_buy_price'] = $this->language->get('entry_buy_price');
+		$data['entry_groupon_price'] = $this->language->get('entry_groupon_price');
+		$data['entry_persons'] = $this->language->get('entry_persons');
+		$data['entry_available_time'] = $this->language->get('entry_available_time');
+		$data['entry_person_limit'] = $this->language->get('entry_person_limit');
 
 		$data['help_keyword'] = $this->language->get('help_keyword');
 		$data['help_sku'] = $this->language->get('help_sku');
@@ -660,6 +665,7 @@ class ControllerCatalogGroupon extends Controller {
 		$data['tab_reward'] = $this->language->get('tab_reward');
 		$data['tab_design'] = $this->language->get('tab_design');
 		$data['tab_openbay'] = $this->language->get('tab_openbay');
+		$data['tab_groupon'] = $this->language->get('tab_groupon');
 
 		if (isset($this->error['warning'])) {
 			$data['error_warning'] = $this->error['warning'];
@@ -689,6 +695,12 @@ class ControllerCatalogGroupon extends Controller {
 			$data['error_keyword'] = $this->error['keyword'];
 		} else {
 			$data['error_keyword'] = '';
+		}
+		
+		if (isset($this->error['buy_price'])) {
+			$data['error_buy_price'] = $this->error['buy_price'];
+		} else {
+			$data['error_buy_price'] = '';
 		}
 
 		$url = '';
@@ -861,6 +873,51 @@ class ControllerCatalogGroupon extends Controller {
 			$data['price'] = $product_info['price'];
 		} else {
 			$data['price'] = '';
+		}
+		
+		// 购买价格
+		if (isset($this->request->post['buy_price'])) {
+			$data['buy_price'] = $this->request->post['buy_price'];
+		} elseif (!empty($product_info)) {
+			$data['buy_price'] = $product_info['buy_price'];
+		} else {
+			$data['buy_price'] = '';
+		}
+		
+		// 团购价
+		if (isset($this->request->post['groupon_price'])) {
+			$data['groupon_price'] = $this->request->post['groupon_price'];
+		} elseif (!empty($product_info)) {
+			$data['groupon_price'] = $product_info['groupon_price'];
+		} else {
+			$data['groupon_price'] = '';
+		}
+		
+		// 成团人数
+		if (isset($this->request->post['persons'])) {
+			$data['persons'] = $this->request->post['persons'];
+		} elseif (!empty($product_info)) {
+			$data['persons'] = $product_info['persons'];
+		} else {
+			$data['groupon_price'] = '2';
+		}
+		
+		// 成团有效时间
+		if (isset($this->request->post['available_time'])) {
+			$data['available_time'] = $this->request->post['available_time'];
+		} elseif (!empty($product_info)) {
+			$data['available_time'] = $product_info['available_time'];
+		} else {
+			$data['available_time'] = '24';
+		}
+		
+		// 团员限制
+		if (isset($this->request->post['person_limit'])) {
+		    $data['person_limit'] = $this->request->post['person_limit'];
+		} elseif (!empty($product_info)) {
+		    $data['person_limit'] = $product_info['person_limit'];
+		} else {
+		    $data['person_limit'] = 0;
 		}
 
 		$this->load->model('catalog/recurring');

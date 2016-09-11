@@ -37,6 +37,7 @@
             <li><a href="#tab-image" data-toggle="tab"><?php echo $tab_image; ?></a></li>
             <li><a href="#tab-reward" data-toggle="tab"><?php echo $tab_reward; ?></a></li>
             <li><a href="#tab-design" data-toggle="tab"><?php echo $tab_design; ?></a></li>
+            <li><a href="#tab-groupon" data-toggle="tab"><?php echo $tab_groupon; ?></a></li>
           </ul>
           <div class="tab-content">
             <div class="tab-pane active" id="tab-general">
@@ -917,6 +918,64 @@
                 </table>
               </div>
             </div>
+            <div class="tab-pane" id="tab-groupon">
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-price"><?php echo $entry_price; ?></label>
+                <div class="col-sm-10">
+                  <input type="text" name="price" value="<?php echo $price; ?>" placeholder="<?php echo $entry_price; ?>" id="input-price" class="form-control" />
+                </div>
+              </div>
+              <div class="form-group required">
+                <label class="col-sm-2 control-label" for="input-buy-price"><?php echo $entry_buy_price; ?></label>
+                <div class="col-sm-10">
+                  <input type="text" name="buy_price" value="<?php echo $buy_price; ?>" placeholder="<?php echo $entry_buy_price; ?>" id="input-buy-price" class="form-control" />
+                  <?php if ($error_buy_price) { ?>
+                  <div class="text-danger"><?php echo $error_buy_price; ?></div>
+                  <?php } ?>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-groupon-price"><?php echo $entry_groupon_price; ?></label>
+                <div class="col-sm-10">
+                  <input type="text" name="groupon_price" value="<?php echo $groupon_price; ?>" placeholder="<?php echo $entry_groupon_price; ?>" id="input-groupon-price" class="form-control" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-persons"><?php echo $entry_persons; ?></label>
+                <div class="col-sm-10">
+                  <input type="text" name="persons" value="<?php echo $persons; ?>" placeholder="<?php echo $entry_persons; ?>" id="input-persons" class="form-control" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-available-time"><?php echo $entry_available_time; ?></label>
+                <div class="col-sm-10">
+                  <input type="text" name="available_time" value="<?php echo $available_time; ?>" placeholder="<?php echo $entry_available_time; ?>" id="input-available-time" class="form-control" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label"><?php echo $entry_person_limit; ?></label>
+                <div class="col-sm-10">
+                  <label class="radio-inline">
+                    <?php if ($person_limit) { ?>
+                    <input type="radio" name="person_limit" value="1" checked="checked" />
+                    <?php echo $text_yes; ?>
+                    <?php } else { ?>
+                    <input type="radio" name="person_limit" value="1" />
+                    <?php echo $text_yes; ?>
+                    <?php } ?>
+                  </label>
+                  <label class="radio-inline">
+                    <?php if (!$person_limit) { ?>
+                    <input type="radio" name="person_limit" value="0" checked="checked" />
+                    <?php echo $text_no; ?>
+                    <?php } else { ?>
+                    <input type="radio" name="person_limit" value="0" />
+                    <?php echo $text_no; ?>
+                    <?php } ?>
+                  </label>
+                </div>
+              </div>
+            </div>  
           </div>
         </form>
       </div>

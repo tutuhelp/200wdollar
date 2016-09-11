@@ -80,6 +80,11 @@ $_['entry_tag']          	 = 'Product Tags';
 $_['entry_reward']           = 'Reward Points';
 $_['entry_layout']           = 'Layout Override';
 $_['entry_recurring']        = 'Recurring Profile';
+$_['entry_buy_price']        = 'Buy Price';
+$_['entry_groupon_price']    = 'Groupon Price';
+$_['entry_persons']          = 'Persons';
+$_['entry_available_time']   = 'Time Available(Hour)';
+$_['entry_person_limit']     = 'Person Limit';
 
 // Help
 $_['help_keyword']           = 'Do not use spaces, instead replace spaces with - and make sure the SEO URL is globally unique.';
@@ -106,3 +111,4 @@ $_['error_name']             = 'Product Name must be greater than 3 and less tha
 $_['error_meta_title']       = 'Meta Title must be greater than 3 and less than 255 characters!';
 $_['error_model']            = 'Product Model must be greater than 1 and less than 64 characters!';
 $_['error_keyword']          = 'SEO URL already in use!';
+$_['error_buy_price']        = 'Buy Price is not empty!';
