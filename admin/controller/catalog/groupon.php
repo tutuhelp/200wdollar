@@ -899,7 +899,7 @@ class ControllerCatalogGroupon extends Controller {
 		} elseif (!empty($product_info)) {
 			$data['persons'] = $product_info['persons'];
 		} else {
-			$data['groupon_price'] = '2';
+			$data['persons'] = '2';
 		}
 		
 		// 成团有效时间
@@ -1401,6 +1401,10 @@ class ControllerCatalogGroupon extends Controller {
 
 		if ((utf8_strlen($this->request->post['model']) < 1) || (utf8_strlen($this->request->post['model']) > 64)) {
 			$this->error['model'] = $this->language->get('error_model');
+		}
+		//单买价格
+		if ($this->request->post['buy_price'] <= 0) {
+			$this->error['buy_price'] = $this->language->get('error_buy_price');
 		}
 
 		if (utf8_strlen($this->request->post['keyword']) > 0) {
