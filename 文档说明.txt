@@ -1,0 +1,10 @@
+/index.php
+/system/startup.php
+/system/../../vendor/autoload.php 如果存在文件则加载
+注册library自动加载  /system/library/*.php
+
+重写内核目录
+/system/storage/modification/
+
+加载/system/engine/*.php
+
