@@ -9,10 +9,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	color: #444;
 }
-/* default font size */
-.fa {
-	font-size: 14px;
-}
+
 /* Override the bootstrap defaults */
 h1 {
 	font-size: 33px;
@@ -56,6 +53,7 @@ select.form-control, textarea.form-control, input[type="text"].form-control, inp
 	font-size: 12px;
 	height: 30px;
 }
+
 /* Fix some bootstrap issues */
 span.hidden-xs, span.hidden-sm, span.hidden-md, span.hidden-lg {
 	display: inline;
@@ -313,25 +311,41 @@ div.required .control-label:before {
 footer {
 	margin-top: 30px;
 	padding-top: 30px;
-	background-color: #303030;
-	border-top: 1px solid #ddd;
-	color: #e2e2e2;
+	background-color: #f1f1f1;
+	color: #000;
 }
 footer hr {
 	border-top: none;
-	border-bottom: 1px solid #666;
+	border-bottom: 1px solid #e2e2e2;
 }
 footer a {
-	color: #ccc;
+	color: #000;
 }
 footer a:hover {
-	color: #fff;
+	color: #000;
+	text-decoration: underline;
 }
 footer h5 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	font-weight: bold;
-	color: #fff;
+	color: #000;
+}
+footer p{
+	text-align:center;
+}
+.subscribe{
+	width:360px;
+}
+
+footer .fa-facebook-square{
+	color:#3a5898;
+}
+footer .fa-twitter-square{
+	color:#4495d2;
+}
+footer .fa-google-plus-square{
+	color:#b73324;
 }
 /* alert */
 .alert {
@@ -746,4 +760,19 @@ h2.price {
 .btn-info:hover, .btn-info:active, .btn-info.active, .btn-info.disabled, .btn-info[disabled] {
     background-image: none;
     background-color: #df5c39;
+}
+
+/* Seven Add subscribe */
+.bl-grey{
+	color:#999;
+}
+.btn-subscribe {
+    background-color:#e62e04;
+    border-color: #e62e04;
+    color: #fff;
+}
+.btn-subscribe:hover,.btn-subscribe:focus {
+    background-color:#e62e04;
+    border-color: #e62e04;
+    color: #fff;
 }
