@@ -17,15 +17,11 @@ class ControllerCommonContentTop extends Controller {
 			$path = explode('_', (string)$this->request->get['path']);
 
 			$layout_id = $this->model_catalog_category->getCategoryLayoutId(end($path));
-		}
-
-		if ($route == 'product/product' && isset($this->request->get['product_id'])) {
+		}else if ($route == 'product/product' && isset($this->request->get['product_id'])) {
 			$this->load->model('catalog/product');
 
 			$layout_id = $this->model_catalog_product->getProductLayoutId($this->request->get['product_id']);
-		}
-
-		if ($route == 'information/information' && isset($this->request->get['information_id'])) {
+		}else if ($route == 'information/information' && isset($this->request->get['information_id'])) {
 			$this->load->model('catalog/information');
 
 			$layout_id = $this->model_catalog_information->getInformationLayoutId($this->request->get['information_id']);

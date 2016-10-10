@@ -536,7 +536,7 @@ footer .fa-google-plus-square{
 }
 /* product list */
 .product-thumb {
-	border: 1px solid #ddd;
+	border: 0px solid #ddd;
 	margin-bottom: 20px;
 	overflow: auto;
 }
@@ -775,4 +775,19 @@ h2.price {
     background-color:#e62e04;
     border-color: #e62e04;
     color: #fff;
+}
+
+.btn-go {
+    background-color:#ff5400;
+    border: 0;
+    color: #fff;
+}
+.btn-go:hover,.btn-go:focus {
+    background-color:#ff5400;
+    border: 0;
+    color: #fff;
+}
+.groupon-btn{
+	position:absolute;
+	right:0px;
 }

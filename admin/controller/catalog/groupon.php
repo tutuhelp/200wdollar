@@ -1,10 +1,5 @@
 <?php
 //require_once('product.php');
-/**
- * 团购
- * @author Seven <tuyingjie@moptical.com>
- *
- */
 class ControllerCatalogGroupon extends Controller {
 	private $error = array();
 
