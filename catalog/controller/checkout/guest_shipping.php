@@ -81,15 +81,17 @@ class ControllerCheckoutGuestShipping extends Controller {
 		// Custom Fields
 		$this->load->model('account/custom_field');
 
-		$data['custom_fields'] = $this->model_account_custom_field->getCustomFields($this->session->data['guest']['customer_group_id']);
+		//$data['custom_fields'] = $this->model_account_custom_field->getCustomFields($this->session->data['guest']['customer_group_id']);
 
 		if (isset($this->session->data['shipping_address']['custom_field'])) {
 			$data['address_custom_field'] = $this->session->data['shipping_address']['custom_field'];
 		} else {
 			$data['address_custom_field'] = array();
 		}
+		
+		return $this->load->view('checkout/guest_shipping', $data);
 
-		$this->response->setOutput($this->load->view('checkout/guest_shipping', $data));
+		//$this->response->setOutput($this->load->view('checkout/guest_shipping', $data));
 	}
 
 	public function save() {

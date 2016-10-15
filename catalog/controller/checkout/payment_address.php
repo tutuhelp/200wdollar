@@ -21,6 +21,9 @@ class ControllerCheckoutPaymentAddress extends Controller {
 
 		$data['button_continue'] = $this->language->get('button_continue');
 		$data['button_upload'] = $this->language->get('button_upload');
+		
+		$data['entry_email'] = "Email";
+		$data['entry_telephone'] = "Telephone";
 
 		if (isset($this->session->data['payment_address']['address_id'])) {
 			$data['address_id'] = $this->session->data['payment_address']['address_id'];
@@ -59,7 +62,7 @@ class ControllerCheckoutPaymentAddress extends Controller {
 			$data['payment_address_custom_field'] = array();
 		}
 
-		$this->response->setOutput($this->load->view('checkout/payment_address', $data));
+		return $this->load->view('checkout/payment_address', $data);
 	}
 
 	public function save() {

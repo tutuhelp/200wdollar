@@ -1,75 +1,11 @@
 <?php
 class ControllerCheckoutShippingMethod extends Controller {
 	public function index() {
-		$this->load->language('checkout/checkout');
+		
+	    $data = $this->getShip();
 
-		if (isset($this->session->data['shipping_address'])) {
-			// Shipping Methods
-			$method_data = array();
-
-			$this->load->model('extension/extension');
-
-			$results = $this->model_extension_extension->getExtensions('shipping');
-
-			foreach ($results as $result) {
-				if ($this->config->get($result['code'] . '_status')) {
-					$this->load->model('extension/shipping/' . $result['code']);
-
-					$quote = $this->{'model_extension_shipping_' . $result['code']}->getQuote($this->session->data['shipping_address']);
-
-					if ($quote) {
-						$method_data[$result['code']] = array(
-							'title'      => $quote['title'],
-							'quote'      => $quote['quote'],
-							'sort_order' => $quote['sort_order'],
-							'error'      => $quote['error']
-						);
-					}
-				}
-			}
-
-			$sort_order = array();
-
-			foreach ($method_data as $key => $value) {
-				$sort_order[$key] = $value['sort_order'];
-			}
-
-			array_multisort($sort_order, SORT_ASC, $method_data);
-
-			$this->session->data['shipping_methods'] = $method_data;
-		}
-
-		$data['text_shipping_method'] = $this->language->get('text_shipping_method');
-		$data['text_comments'] = $this->language->get('text_comments');
-		$data['text_loading'] = $this->language->get('text_loading');
-
-		$data['button_continue'] = $this->language->get('button_continue');
-
-		if (empty($this->session->data['shipping_methods'])) {
-			$data['error_warning'] = sprintf($this->language->get('error_no_shipping'), $this->url->link('information/contact'));
-		} else {
-			$data['error_warning'] = '';
-		}
-
-		if (isset($this->session->data['shipping_methods'])) {
-			$data['shipping_methods'] = $this->session->data['shipping_methods'];
-		} else {
-			$data['shipping_methods'] = array();
-		}
-
-		if (isset($this->session->data['shipping_method']['code'])) {
-			$data['code'] = $this->session->data['shipping_method']['code'];
-		} else {
-			$data['code'] = '';
-		}
-
-		if (isset($this->session->data['comment'])) {
-			$data['comment'] = $this->session->data['comment'];
-		} else {
-			$data['comment'] = '';
-		}
-
-		$this->response->setOutput($this->load->view('checkout/shipping_method', $data));
+		//$this->response->setOutput();
+		return $this->load->view('checkout/shipping_method', $data);
 	}
 
 	public function save() {
@@ -129,5 +65,100 @@ class ControllerCheckoutShippingMethod extends Controller {
 
 		$this->response->addHeader('Content-Type: application/json');
 		$this->response->setOutput(json_encode($json));
+	}
+	
+	/**
+	 * 更改运送地址
+	 * @author Seven <tuyingjie@moptical.com>
+	 */
+	public function reload(){
+	    // 获取国家id
+	    $contry_id = $this->request->get['country_id'];
+	    // 获取省份id
+	    $zone_id = $this->request->get['zone_id'];
+	    $data = $this->getShip($contry_id,$zone_id);
+	    // 输出html
+	    $this->response->setOutput($this->load->view('checkout/shipping_method', $data));
+	}
+	
+	private function getShip($country_id = 0, $zone_id = 0){
+	    
+	    if((int)$country_id<1){
+	        $country_id = $this->config->get('config_country_id');
+	    }
+	    
+	    $this->load->language('checkout/checkout');
+	    
+	    //if (isset($this->session->data['shipping_address'])) {
+	    // Shipping Methods
+	    $method_data = array();
+	    $shipping_address = array(
+	            'country_id' => $country_id,
+	            'zone_id' => (int)$zone_id,
+	    );
+	    
+	    $this->load->model('extension/extension');
+	    
+	    $results = $this->model_extension_extension->getExtensions('shipping');
+	    
+	    foreach ($results as $result) {
+	        if ($this->config->get($result['code'] . '_status')) {
+	            $this->load->model('extension/shipping/' . $result['code']);
+	    
+	            $quote = $this->{'model_extension_shipping_' . $result['code']}->getQuote($shipping_address); // $this->session->data['shipping_address']
+	    
+	            if ($quote) {
+	                $method_data[$result['code']] = array(
+	                        'title'      => $quote['title'],
+	                        'quote'      => $quote['quote'],
+	                        'sort_order' => $quote['sort_order'],
+	                        'error'      => $quote['error']
+	                );
+	            }
+	        }
+	    }
+	    
+	    $sort_order = array();
+	    
+	    foreach ($method_data as $key => $value) {
+	        $sort_order[$key] = $value['sort_order'];
+	    }
+	    
+	    array_multisort($sort_order, SORT_ASC, $method_data);
+	    
+	    $this->session->data['shipping_methods'] = $method_data;
+	    //}
+	    
+	    $data['text_shipping_method'] = $this->language->get('text_shipping_method');
+	    $data['text_comments'] = $this->language->get('text_comments');
+	    $data['text_loading'] = $this->language->get('text_loading');
+	    
+	    $data['button_continue'] = $this->language->get('button_continue');
+	    
+	    if (empty($this->session->data['shipping_methods'])) {
+	        $data['error_warning'] = sprintf($this->language->get('error_no_shipping'), $this->url->link('information/contact'));
+	    } else {
+	        $data['error_warning'] = '';
+	    }
+	    
+	    if (isset($this->session->data['shipping_methods'])) {
+	        $data['shipping_methods'] = $this->session->data['shipping_methods'];
+	    } else {
+	        $data['shipping_methods'] = array();
+	    }
+	    
+	    if (isset($this->session->data['shipping_method']['code'])) {
+	        $data['code'] = $this->session->data['shipping_method']['code'];
+	    } else {
+	        $data['code'] = '';
+	    }
+	    
+	    if (isset($this->session->data['comment'])) {
+	        $data['comment'] = $this->session->data['comment'];
+	    } else {
+	        $data['comment'] = '';
+	    }
+	    
+	    return $data;
 	}
 }

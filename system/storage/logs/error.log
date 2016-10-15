@@ -191,3 +191,113 @@
 2016-10-10 18:09:05 - PHP Notice:  Undefined index: rating in D:\www\200wdollar\catalog\view\theme\better-life\template\product\hot.tpl on line 10
 2016-10-10 18:09:05 - PHP Notice:  Undefined index: rating in D:\www\200wdollar\catalog\view\theme\better-life\template\product\hot.tpl on line 10
 2016-10-10 18:09:05 - PHP Notice:  Undefined index: rating in D:\www\200wdollar\catalog\view\theme\better-life\template\product\hot.tpl on line 10
+2016-10-12 10:17:40 - PHP Notice:  Trying to get property of non-object in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:17:40 - PHP Warning:  Invalid argument supplied for foreach() in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:17:41 - PHP Notice:  Trying to get property of non-object in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:17:41 - PHP Warning:  Invalid argument supplied for foreach() in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:17:41 - PHP Notice:  Trying to get property of non-object in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:17:41 - PHP Warning:  Invalid argument supplied for foreach() in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:17:41 - PHP Notice:  Trying to get property of non-object in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:17:41 - PHP Warning:  Invalid argument supplied for foreach() in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:17:41 - PHP Notice:  Trying to get property of non-object in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:17:41 - PHP Warning:  Invalid argument supplied for foreach() in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:17:41 - PHP Notice:  Trying to get property of non-object in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:17:41 - PHP Warning:  Invalid argument supplied for foreach() in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:19:37 - PHP Notice:  Trying to get property of non-object in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:19:37 - PHP Warning:  Invalid argument supplied for foreach() in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:19:37 - PHP Notice:  Trying to get property of non-object in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:19:37 - PHP Warning:  Invalid argument supplied for foreach() in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:19:37 - PHP Notice:  Trying to get property of non-object in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:19:37 - PHP Warning:  Invalid argument supplied for foreach() in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:19:37 - PHP Notice:  Trying to get property of non-object in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:19:37 - PHP Warning:  Invalid argument supplied for foreach() in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:19:37 - PHP Notice:  Trying to get property of non-object in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:19:37 - PHP Warning:  Invalid argument supplied for foreach() in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:19:37 - PHP Notice:  Trying to get property of non-object in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:19:37 - PHP Warning:  Invalid argument supplied for foreach() in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:19:37 - PHP Notice:  Trying to get property of non-object in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:19:37 - PHP Warning:  Invalid argument supplied for foreach() in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:19:38 - PHP Notice:  Trying to get property of non-object in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:19:38 - PHP Warning:  Invalid argument supplied for foreach() in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:19:47 - PHP Notice:  Trying to get property of non-object in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:19:47 - PHP Warning:  Invalid argument supplied for foreach() in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:20:13 - PHP Notice:  Trying to get property of non-object in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 10:20:13 - PHP Warning:  Invalid argument supplied for foreach() in D:\www\200wdollar\system\library\cart\cart.php on line 39
+2016-10-12 15:11:07 - PHP Notice:  Undefined index: guest in D:\www\200wdollar\catalog\controller\checkout\guest_shipping.php on line 84
+2016-10-12 15:12:44 - PHP Notice:  Undefined index: guest in D:\www\200wdollar\catalog\controller\checkout\guest_shipping.php on line 84
+2016-10-12 15:14:26 - PHP Notice:  Undefined index: guest in D:\www\200wdollar\catalog\controller\checkout\guest_shipping.php on line 84
+2016-10-12 15:15:26 - PHP Notice:  Undefined variable: custom_fields in D:\www\200wdollar\catalog\view\theme\better-life\template\checkout\guest_shipping.tpl on line 66
+2016-10-12 15:15:26 - PHP Warning:  Invalid argument supplied for foreach() in D:\www\200wdollar\catalog\view\theme\better-life\template\checkout\guest_shipping.tpl on line 66
+2016-10-12 15:16:14 - PHP Notice:  Undefined variable: custom_fields in D:\www\200wdollar\catalog\view\theme\better-life\template\checkout\guest_shipping.tpl on line 66
+2016-10-12 15:16:14 - PHP Warning:  Invalid argument supplied for foreach() in D:\www\200wdollar\catalog\view\theme\better-life\template\checkout\guest_shipping.tpl on line 66
+2016-10-12 15:54:56 - PHP Notice:  Undefined variable: entry_email in D:\www\200wdollar\catalog\view\theme\better-life\template\checkout\payment_address.tpl on line 23
+2016-10-12 15:54:56 - PHP Notice:  Undefined variable: entry_email in D:\www\200wdollar\catalog\view\theme\better-life\template\checkout\payment_address.tpl on line 25
+2016-10-12 15:54:56 - PHP Notice:  Undefined variable: entry_telephone in D:\www\200wdollar\catalog\view\theme\better-life\template\checkout\payment_address.tpl on line 29
+2016-10-12 15:54:56 - PHP Notice:  Undefined variable: entry_telephone in D:\www\200wdollar\catalog\view\theme\better-life\template\checkout\payment_address.tpl on line 31
+2016-10-13 11:26:16 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 53
+2016-10-13 11:26:16 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 53
+2016-10-13 11:26:16 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 53
+2016-10-13 11:27:27 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 53
+2016-10-13 11:27:27 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 53
+2016-10-13 11:27:27 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 53
+2016-10-13 11:29:36 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 53
+2016-10-13 11:29:36 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 53
+2016-10-13 11:29:36 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 53
+2016-10-13 11:42:19 - PHP Notice:  Undefined variable: method in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 55
+2016-10-13 11:42:19 - PHP Notice:  Undefined variable: method in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 55
+2016-10-13 11:42:19 - PHP Notice:  Undefined variable: method in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 55
+2016-10-13 11:43:13 - PHP Warning:  Illegal string offset 'country_id' in D:\www\200wdollar\catalog\model\extension\payment\cod.php on line 6
+2016-10-13 11:43:13 - PHP Notice:  Uninitialized string offset: 0 in D:\www\200wdollar\catalog\model\extension\payment\cod.php on line 6
+2016-10-13 11:43:13 - PHP Warning:  Illegal string offset 'zone_id' in D:\www\200wdollar\catalog\model\extension\payment\cod.php on line 6
+2016-10-13 11:43:13 - PHP Notice:  Uninitialized string offset: 0 in D:\www\200wdollar\catalog\model\extension\payment\cod.php on line 6
+2016-10-13 11:43:13 - PHP Warning:  Illegal string offset 'country_id' in D:\www\200wdollar\catalog\model\extension\payment\pp_standard.php on line 6
+2016-10-13 11:43:13 - PHP Notice:  Uninitialized string offset: 0 in D:\www\200wdollar\catalog\model\extension\payment\pp_standard.php on line 6
+2016-10-13 11:43:13 - PHP Warning:  Illegal string offset 'zone_id' in D:\www\200wdollar\catalog\model\extension\payment\pp_standard.php on line 6
+2016-10-13 11:43:13 - PHP Notice:  Uninitialized string offset: 0 in D:\www\200wdollar\catalog\model\extension\payment\pp_standard.php on line 6
+2016-10-13 14:04:52 - PHP Notice:  Undefined index: country_id in D:\www\200wdollar\catalog\model\extension\payment\cod.php on line 6
+2016-10-13 14:04:52 - PHP Notice:  Undefined index: zone_id in D:\www\200wdollar\catalog\model\extension\payment\cod.php on line 6
+2016-10-13 14:04:52 - PHP Notice:  Undefined index: country_id in D:\www\200wdollar\catalog\model\extension\payment\pp_standard.php on line 6
+2016-10-13 14:04:52 - PHP Notice:  Undefined index: zone_id in D:\www\200wdollar\catalog\model\extension\payment\pp_standard.php on line 6
+2016-10-13 14:05:54 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 53
+2016-10-13 14:05:54 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 53
+2016-10-13 14:05:54 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 53
+2016-10-13 14:07:41 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 53
+2016-10-13 14:07:41 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 53
+2016-10-13 14:07:41 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 53
+2016-10-13 15:03:17 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 53
+2016-10-13 15:03:17 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 53
+2016-10-13 15:03:17 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 53
+2016-10-13 15:04:15 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 53
+2016-10-13 15:04:15 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 53
+2016-10-13 15:04:15 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\payment_method.php on line 53
+2016-10-13 15:30:10 - PHP Notice:  Undefined index: shopping_product in D:\www\200wdollar\catalog\controller\checkout\buynow.php on line 6
+2016-10-13 16:21:05 - PHP Warning:  Missing argument 1 for ModelExtensionShippingFlat::getQuote() in D:\www\200wdollar\catalog\model\extension\shipping\flat.php on line 3
+2016-10-13 16:21:05 - PHP Notice:  Undefined variable: address in D:\www\200wdollar\catalog\model\extension\shipping\flat.php on line 6
+2016-10-13 16:21:05 - PHP Notice:  Undefined variable: address in D:\www\200wdollar\catalog\model\extension\shipping\flat.php on line 6
+2016-10-13 17:08:25 - PHP Warning:  Invalid argument supplied for foreach() in D:\www\200wdollar\system\engine\loader.php on line 84
+2016-10-13 17:08:25 - PHP Notice:  Undefined variable: error_warning in D:\www\200wdollar\catalog\view\theme\better-life\template\checkout\payment_method.tpl on line 1
+2016-10-13 17:08:25 - PHP Notice:  Undefined variable: payment_methods in D:\www\200wdollar\catalog\view\theme\better-life\template\checkout\payment_method.tpl on line 4
+2016-10-13 17:08:25 - PHP Notice:  Undefined variable: text_agree in D:\www\200wdollar\catalog\view\theme\better-life\template\checkout\payment_method.tpl on line 24
+2016-10-13 17:08:25 - PHP Notice:  Undefined variable: button_continue in D:\www\200wdollar\catalog\view\theme\better-life\template\checkout\payment_method.tpl on line 39
+2016-10-13 17:08:25 - PHP Notice:  Undefined variable: text_loading in D:\www\200wdollar\catalog\view\theme\better-life\template\checkout\payment_method.tpl on line 39
+2016-10-15 17:14:04 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\confirm.php on line 89
+2016-10-15 17:14:04 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\confirm.php on line 90
+2016-10-15 17:14:04 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\confirm.php on line 91
+2016-10-15 17:14:04 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\confirm.php on line 92
+2016-10-15 17:14:04 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\confirm.php on line 93
+2016-10-15 17:14:04 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\confirm.php on line 94
+2016-10-15 17:14:04 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\confirm.php on line 95
+2016-10-15 17:14:04 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\confirm.php on line 96
+2016-10-15 17:14:04 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\confirm.php on line 97
+2016-10-15 17:14:04 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\confirm.php on line 98
+2016-10-15 17:14:04 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\confirm.php on line 99
+2016-10-15 17:14:04 - PHP Notice:  Undefined index: payment_address in D:\www\200wdollar\catalog\controller\checkout\confirm.php on line 100
+2016-10-15 17:14:04 - PHP Notice:  Undefined index: comment in D:\www\200wdollar\catalog\controller\checkout\confirm.php on line 210
+2016-10-15 17:14:04 - PHP Notice:  Undefined index: customer_id in D:\www\200wdollar\catalog\model\checkout\order.php on line 4
+2016-10-15 17:14:04 - PHP Notice:  Undefined index: customer_group_id in D:\www\200wdollar\catalog\model\checkout\order.php on line 4
+2016-10-15 17:14:04 - PHP Notice:  Undefined index: firstname in D:\www\200wdollar\catalog\model\checkout\order.php on line 4
+2016-10-15 17:14:04 - PHP Notice:  Undefined index: lastname in D:\www\200wdollar\catalog\model\checkout\order.php on line 4
+2016-10-15 17:14:04 - PHP Notice:  Undefined index: email in D:\www\200wdollar\catalog\model\checkout\order.php on line 4
+2016-10-15 17:14:04 - PHP Notice:  Undefined index: telephone in D:\www\200wdollar\catalog\model\checkout\order.php on line 4
+2016-10-15 17:14:04 - PHP Notice:  Undefined index: fax in D:\www\200wdollar\catalog\model\checkout\order.php on line 4
+2016-10-15 17:14:05 - PHP Notice:  Undefined index: payment_method in D:\www\200wdollar\catalog\controller\checkout\confirm.php on line 371
