@@ -29,13 +29,15 @@ class ModelCatalogGroupon extends ModelCatalogProduct {
 	 */
 	private function getProductsByPage($limit = 6, $page = 1,$order_by = "p.date_added DESC"){
 	    $product_data = array();
-	    
+	    /* 安全默认设置 */
 	    if((int)$page<1) $page = 1;
 	    if((int)$limit<1) $limit = 6;
-	    
+	    // 数据开始位置
 	    $start = ($page-1)*$limit;
+	    // 表前缀
 	    $db_prefix = DB_PREFIX;
 	    $lang_id = (int)$this->config->get('config_language_id');
+	    // 执行的SQL语句
 	    $sql = "SELECT p.product_id,p.image,pd.name,p.price,p.tax_class_id,pg.groupon_price,pg.persons FROM {$db_prefix}product_groupon pg
                 LEFT JOIN {$db_prefix}product p ON pg.product_id=p.product_id
                 LEFT JOIN {$db_prefix}product_description pd ON pg.product_id=pd.product_id
@@ -59,6 +61,12 @@ class ModelCatalogGroupon extends ModelCatalogProduct {
 	    }
 	    
 	    return $product_data;
+	}
+	
+	public function getConfirm(){
+	    
+	    
+	    
 	}
 
 }

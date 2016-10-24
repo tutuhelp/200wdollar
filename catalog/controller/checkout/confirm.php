@@ -4,9 +4,10 @@ class ControllerCheckoutConfirm extends Controller {
 
 		$order_data = array();
 		
-		// 商品详情
-		$product_info = $this->session->data["shopping_product"];
+		// 载入product对象
+		$this->load->model("catalog/product");
 		
+		$product_info = $this->model_catalog_product->getConfirm();
 		var_dump($product_info);die;
 		
 
